@@ -1,0 +1,8 @@
+exit                    Exit from a child process
+fork                    Create a new R process using the Unix 'fork'
+                        system call
+getpid                  Obtain the process id for the current process.
+kill                    Send a signal to one or more processes.
+signame                 Obtain information about signals
+wait                    Wait for child process(es) to stop or
+                        terminate.

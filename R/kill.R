@@ -1,0 +1,19 @@
+# $Id: kill.R,v 1.3 2003/07/17 19:27:26 warnes Exp $
+
+kill <- function(pid, signal=15)
+  {
+    .C("Rfork_kill",
+       as.integer(pid),
+       as.integer(signal),
+       flag=integer(1)
+       )$flag
+  }
+
+killall <- function(signal=15)
+  {
+    if(!exists(".pidlist",where="package:fork"))
+      warning("No processes to kill, ignored.")
+    for(pid in get(".pidlist",pos="package:fork"))
+      kill(pid, signal)
+    invisible()
+  }
