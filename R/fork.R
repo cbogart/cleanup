@@ -1,4 +1,4 @@
-# $Id: fork.R,v 1.3 2003/07/17 01:50:25 warnes Exp $
+# $Id: fork.R,v 1.4 2004/05/25 19:12:32 warnes Exp $
 
 fork <- function(slave)
   
@@ -6,7 +6,10 @@ fork <- function(slave)
     if(missing(slave) || class(slave)!="function" && !is.null(slave) )
       stop("function for slave process to exectute must be provided.")
 
-    pid  <- .C("Rfork_fork",pid=integer(1))$pid
+    pid  <- .C("Rfork_fork",
+               pid=integer(1),
+               PACKAGE="fork"
+               )$pid
 
     if(pid==0)
       {

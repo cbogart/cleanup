@@ -1,7 +1,10 @@
-# $Id: getpid.R,v 1.2 2003/07/17 01:28:31 warnes Exp $
+# $Id: getpid.R,v 1.3 2004/05/25 19:12:32 warnes Exp $
 
 getpid <- function()
   {
-    .C("Rfork_getpid", pid=integer(1))$pid
+    .C("Rfork_getpid",
+       pid=integer(1),
+       PACKAGE="fork"
+       )$pid
   }
 
