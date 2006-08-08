@@ -1,4 +1,4 @@
-# $Id: exit.R,v 1.2 2004/05/25 19:12:26 warnes Exp $
+# $Id: exit.R 340 2004-05-25 19:12:32Z warnes $
 
 exit <- function(status=0)
   {

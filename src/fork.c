@@ -1,4 +1,4 @@
-/* $Id: fork.c,v 1.6 2003/12/19 15:22:46 warnes Exp $ */
+/* $Id: fork.c 272 2003-12-19 15:22:46Z warnes $ */
 
 /*************************************************************/
 /* Simple wrappers around the fork, getpid, kill, _exit, and */

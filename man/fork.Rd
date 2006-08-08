@@ -1,4 +1,4 @@
-% $Id: fork.Rd,v 1.9 2003/12/19 15:22:45 warnes Exp $
+% $Id: fork.Rd 977 2006-08-02 22:21:49Z warnes $
 \name{fork}
 \alias{fork}
 \title{Create a new R process using the Unix 'fork' system call}
@@ -88,7 +88,7 @@ fork(slave)
    function returns 0 to the  child  process.
 }
 \references{'fork' man page}
-\author{ Gregory R. Warnes \email{gregory\_r\_warnes\@groton.pfizer.com}}
+\author{ Gregory R. Warnes \email{warnes@bst.rochester.edu}}
 \seealso{\code{\link{getpid}}, \code{\link{exit}}, \code{\link{wait}},
          \code{\link{kill}}, \code{\link{killall}} }
 \examples{

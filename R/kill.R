@@ -1,4 +1,4 @@
-# $Id: kill.R,v 1.4 2004/05/25 19:12:32 warnes Exp $
+# $Id: kill.R 340 2004-05-25 19:12:32Z warnes $
 
 kill <- function(pid, signal=15)
   {

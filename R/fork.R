@@ -1,4 +1,4 @@
-# $Id: fork.R,v 1.4 2004/05/25 19:12:32 warnes Exp $
+# $Id: fork.R 340 2004-05-25 19:12:32Z warnes $
 
 fork <- function(slave)
   

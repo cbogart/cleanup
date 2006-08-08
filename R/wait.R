@@ -1,4 +1,4 @@
-# $Id: wait.R,v 1.3 2004/05/25 19:12:32 warnes Exp $
+# $Id: wait.R 340 2004-05-25 19:12:32Z warnes $
 
 wait <- function(pid, nohang=FALSE, untraced=FALSE)
 {
