@@ -1,4 +1,4 @@
-/* $Id: fork.c 272 2003-12-19 15:22:46Z warnes $ */
+/* $Id: fork.c 1043 2007-02-05 23:08:43Z warnes $ */
 
 /*************************************************************/
 /* Simple wrappers around the fork, getpid, kill, _exit, and */
@@ -266,3 +266,15 @@ SEXP Rfork_siglist()
   return list; 
 } 
 
+void Rfork_signal(int *sig, int *action)
+{
+  sig_t func;
+
+  if(*action==0)
+    func = SIG_IGN;
+  else
+    func = SIG_DFL;
+
+  signal( *sig, func );
+}
+   

@@ -1,0 +1,4 @@
+2007-02-05 23:21  warnes
+
+	* man/signal.Rd: Add documentation for signal()
+

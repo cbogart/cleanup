@@ -1,4 +1,4 @@
-% $Id: fork.Rd 977 2006-08-02 22:21:49Z warnes $
+% $Id: fork.Rd 1046 2007-02-05 23:21:39Z warnes $
 \name{fork}
 \alias{fork}
 \title{Create a new R process using the Unix 'fork' system call}
@@ -162,8 +162,17 @@ recieve <- function()
      close(con2)
   }
 
+\dontrun{
+# Important: if we aren't going to explicitly wait() for the child
+# process to exit, we need to tell the OS that we are ignoring child
+# process signals so it will let us die cleanly.
+signal("SIGCHLD","ignore")
+}
 
+# fork off the process
 pid <- fork(recieve)
+
+# start sending...
 send()
 }
 }
