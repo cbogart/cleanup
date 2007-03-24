@@ -1,4 +1,4 @@
-% $Id: exit.Rd 977 2006-08-02 22:21:49Z warnes $
+% $Id: exit.Rd 1085 2007-03-24 21:30:26Z warnes $
 \name{exit}
 \alias{exit}
 \title{Exit from a child process}
@@ -25,7 +25,7 @@ exit(status = 0)
   argument, so it is usually not necessary to directly call exit().
   }
 \references{"\_exit" man page}
-\author{ Gregory R. Warnes \email{warnes@bst.rochester.edu}}
+\author{ Gregory R. Warnes \email{greg@random-technologies-llc.com}}
 \seealso{\code{\link{fork}}, \code{\link{getpid}}, \code{\link{wait}},
          \code{\link{kill}}, \code{\link{killall}} }
 \examples{

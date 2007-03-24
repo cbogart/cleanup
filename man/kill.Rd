@@ -1,4 +1,4 @@
-% $Id: kill.Rd 977 2006-08-02 22:21:49Z warnes $
+% $Id: kill.Rd 1085 2007-03-24 21:30:26Z warnes $
 \name{kill}
 \alias{kill}
 \alias{killall}
@@ -28,7 +28,7 @@ killall(signal = 15)
   \code{killall} does not return a value.
 }
 \references{"kill" and "waitpid"  man pages}
-\author{ Gregory R. Warnes \email{warnes@bst.rochester.edu}}
+\author{ Gregory R. Warnes \email{greg@random-technologies-llc.com}}
 \seealso{\code{\link{getpid}}, \code{\link{exit}}, \code{\link{wait}},
          \code{\link{kill}}, \code{\link{killall}} }
 \examples{
