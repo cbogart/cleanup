@@ -1,9 +1,10 @@
-% $Id: wait.Rd 977 2006-08-02 22:21:49Z warnes $
+% $Id: wait.Rd 1338 2009-05-09 05:42:05Z warnes $
 \name{wait}
 \alias{wait}
 \title{Wait for child process(es) to stop or terminate.}
-\description{Wait for child process(es) created using 'fork' command to
-  stop or terminate.}
+\description{
+  Wait for child process(es) created using 'fork' command to
+  stop or terminate.
 }
 \usage{
 wait(pid, nohang=FALSE, untraced=FALSE)
@@ -33,7 +34,7 @@ wait(pid, nohang=FALSE, untraced=FALSE)
   and the meanings of the status indicator.
 }
 \references{"wait" and "waitpid"  man pages}
-\author{ Gregory R. Warnes \email{warnes\@bst.rochester.edu}}
+\author{ Gregory R. Warnes \email{greg@random-technologies-llc.com}}
 \seealso{\code{\link{fork}}, \code{\link{exit}}, \code{\link{getpid}},
          \code{\link{kill}}, \code{\link{killall}}}
 \examples{
