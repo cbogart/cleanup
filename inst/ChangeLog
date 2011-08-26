@@ -1,62 +1,78 @@
+2011-08-26 23:35  warnes
+
+	* DESCRIPTION: Update Greg's email address.
+
+2011-08-26 20:48  warnes
+
+	* man/exit.Rd, man/fork.Rd, man/getpid.Rd, man/handleSIGCLD.Rd,
+	  man/kill.Rd, man/signal.Rd, man/signame.Rd, man/wait.Rd: Update
+	  Greg's email address
+
+2009-07-17 22:01  warnes
+
+	* DESCRIPTION, NAMESPACE, inst/NEWS: Add NAMESPACE file, update
+	  version number to 1.2.3
+
+2009-05-09 05:45  warnes
+
+	* DESCRIPTION: Update for 1.2.1
+
+2009-05-09 05:44  warnes
+
+	* ChangeLog, NEWS: Add convenience links to NEWS and ChangeLog at
+	  top level
+
 2009-05-09 05:43  warnes
 
-	* [r1339] NEWS, inst, inst/NEWS: Move NEWS to inst subdir.
+	* NEWS, inst, inst/NEWS: Move NEWS to inst subdir.
 
 2009-05-09 05:42  warnes
 
-	* [r1338] man/wait.Rd: Fix .Rd syntax error and update mailing
-	  address
+	* man/wait.Rd: Fix .Rd syntax error and update mailing address
 
 2007-10-22 02:24  warnes
 
-	* [r1196]
-	  branches/GenerateFORMATSfromFactorObjects/SASxport/DESCRIPTION,
-	  trunk/MSOfficeUtil/DESCRIPTION, trunk/RMCMC/DESCRIPTION,
-	  trunk/Rlsf/DESCRIPTION, trunk/SASxport/DESCRIPTION,
-	  trunk/bwRF/DESCRIPTION, trunk/exp.ssize/DESCRIPTION, DESCRIPTION,
-	  trunk/gdata/DESCRIPTION, trunk/gmodels/DESCRIPTION,
-	  trunk/gplots/DESCRIPTION, trunk/gregmisc/DESCRIPTION,
-	  trunk/ssize/DESCRIPTION: Clarify GPL version
+	* DESCRIPTION: Clarify GPL version
 
 2007-03-24 21:31  warnes
 
-	* [r1086] DESCRIPTION: Update version number and date
+	* DESCRIPTION: Update version number and date
 
 2007-03-24 21:30  warnes
 
-	* [r1085] DESCRIPTION, man/exit.Rd, man/fork.Rd, man/getpid.Rd,
+	* DESCRIPTION, man/exit.Rd, man/fork.Rd, man/getpid.Rd,
 	  man/kill.Rd, man/signame.Rd: Update my email address
 
 2007-03-24 21:27  warnes
 
-	* [r1084] man/handleSIGCLD.Rd, man/signal.Rd: Add note of financial
-	  support from Metrum
+	* man/handleSIGCLD.Rd, man/signal.Rd: Add note of financial support
+	  from Metrum
 
 2007-03-22 17:12  warnes
 
-	* [r1082] NEWS: Add NEWS file
+	* NEWS: Add NEWS file
 
 2007-03-22 17:12  warnes
 
-	* [r1081] DESCRIPTION: Add date to DESCRIPTION file
+	* DESCRIPTION: Add date to DESCRIPTION file
 
 2007-03-06 23:37  warnes
 
-	* [r1072] DESCRIPTION: Update version number and description
+	* DESCRIPTION: Update version number and description
 
 2007-03-06 23:29  warnes
 
-	* [r1071] man/handleSIGCLD.Rd: Fix syntax error in example due to
+	* man/handleSIGCLD.Rd: Fix syntax error in example due to
 	  incomplete code deletion.
 
 2007-03-06 23:29  warnes
 
-	* [r1070] R/handleSIGCLD.R, R/restoreSIGCLD.R: Add 'PACKAGE='
-	  argument to '.C' calls to make 'R CMD check' happy
+	* R/handleSIGCLD.R, R/restoreSIGCLD.R: Add 'PACKAGE=' argument to
+	  '.C' calls to make 'R CMD check' happy
 
 2007-03-06 23:28  warnes
 
-	* [r1069] tests/checkZombies.R, tests/test_many_fork_BSD.R,
+	* tests/checkZombies.R, tests/test_many_fork_BSD.R,
 	  tests/test_many_fork_BSD.Rout.save, tests/test_many_fork_SysV.R,
 	  tests/test_many_fork_SysV.Rout.save,
 	  tests/test_many_fork_broken.R,
@@ -65,24 +81,24 @@
 
 2007-03-06 23:17  warnes
 
-	* [r1068] src/sigchld_handler.c: Add a helpful comment
+	* src/sigchld_handler.c: Add a helpful comment
 
 2007-03-06 23:15  warnes
 
-	* [r1067] man/fork.Rd, man/handleSIGCLD.Rd, man/signal.Rd: Create
-	  manual pages for handleSIGCLD() and restoreSIGCLD(), as well as
+	* man/fork.Rd, man/handleSIGCLD.Rd, man/signal.Rd: Create manual
+	  pages for handleSIGCLD() and restoreSIGCLD(), as well as
 	  appropriately modifying the pages for fork() and signal()
 
 2007-03-06 22:47  warnes
 
-	* [r1066] tests/test_many_fork_BSD.R: Create SysV and BSD tests for
-	  code to prevent zombie process creation, update code that
-	  intentionally creates zombies. Move sub-process creation and
-	  zombie test code to a function for use by all three test files
+	* tests/test_many_fork_BSD.R: Create SysV and BSD tests for code to
+	  prevent zombie process creation, update code that intentionally
+	  creates zombies. Move sub-process creation and zombie test code
+	  to a function for use by all three test files
 
 2007-03-06 22:47  warnes
 
-	* [r1065] tests/checkZombies.R, tests/test_many_fork.R,
+	* tests/checkZombies.R, tests/test_many_fork.R,
 	  tests/test_many_fork_SysV.R, tests/test_many_fork_broken.R:
 	  Create SysV and BSD tests for code to prevent zombie process
 	  creation, update code that intentionally creates zombies. Move
@@ -91,127 +107,84 @@
 
 2007-03-06 22:44  warnes
 
-	* [r1064] R/handleSIGCLD.R, R/restoreSIGCLD.R: Add wrappers for C
-	  functions to control setting/restoring child
+	* R/handleSIGCLD.R, R/restoreSIGCLD.R: Add wrappers for C functions
+	  to control setting/restoring child
 	  process signal handler.
 
 2007-03-06 22:10  warnes
 
-	* [r1063] tests/test_many_fork_broken.R: Modify script to check for
-	  the presence of zombie processes
+	* tests/test_many_fork_broken.R: Modify script to check for the
+	  presence of zombie processes
 
 2007-03-06 21:01  warnes
 
-	* [r1062] DESCRIPTION: This is a test commit.
+	* DESCRIPTION: This is a test commit.
 
 2007-02-15 18:40  warnes
 
-	* [r1055] tests/test_many_fork.R: Improve test code
+	* tests/test_many_fork.R: Improve test code
 
 2007-02-15 18:25  warnes
 
-	* [r1054] src/sigchld_handler.c: Fix typo.
+	* src/sigchld_handler.c: Fix typo.
 
 2007-02-14 22:48  warnes
 
-	* [r1053] src/sigchld_handler.c, tests, tests/test_many_fork.R: Add
-	  code to install SIGCHLD handler to avoid forked children from
-	  becoming zombies
+	* src/sigchld_handler.c, tests, tests/test_many_fork.R: Add code to
+	  install SIGCHLD handler to avoid forked children from becoming
+	  zombies
 
 2007-02-05 23:21  warnes
 
-	* [r1047] man/signal.Rd: Add documentation for signal()
+	* man/signal.Rd: Add documentation for signal()
 
 2007-02-05 23:21  warnes
 
-	* [r1046] man/fork.Rd: Add signal() to example for fork()
+	* man/fork.Rd: Add signal() to example for fork()
 
 2007-02-05 23:21  warnes
 
-	* [r1045] DESCRIPTION: Bump version number
+	* DESCRIPTION: Bump version number
 
 2007-02-05 23:17  warnes
 
-	* [r1044] R/signal.R: Handle arguments better
+	* R/signal.R: Handle arguments better
 
 2007-02-05 23:08  warnes
 
-	* [r1043] DESCRIPTION, R/signal.R, R/signame.R, man/fork.Rd,
-	  man/signal.Rd, man/signame.Rd, src/fork.c: Add signal() command
-	  to allow ignoring signals
+	* DESCRIPTION, R/signal.R, R/signame.R, man/fork.Rd, man/signal.Rd,
+	  man/signame.Rd, src/fork.c: Add signal() command to allow
+	  ignoring signals
 
 2006-08-02 22:21  warnes
 
-	* [r977] trunk/BalloonPlotPaper/BalloonPlot.pdf,
-	  trunk/BalloonPlotPaper/BalloonPlot.tex,
-	  trunk/MSOfficeUtil/DESCRIPTION,
-	  trunk/PathwayModeling/thesispaper/slides.tex,
-	  trunk/RMCMC/DESCRIPTION, trunk/RMCMC/man/make.density.Rd,
-	  trunk/Rlsf/DESCRIPTION, trunk/Rlsf/man/lsf.numcpu.Rd,
-	  trunk/Rlsf/man/lsf.parRapply.Rd, trunk/Rlsf/man/scat.Rd,
-	  trunk/bwRF/DESCRIPTION, trunk/bwRF/man/RF.Rd,
-	  trunk/exp.ssize/inst/doc/ssize.pdf,
-	  trunk/exp.ssize/inst/doc/ssize.tex, DESCRIPTION, man/exit.Rd,
-	  man/fork.Rd, man/getpid.Rd, man/kill.Rd, man/signame.Rd,
-	  man/wait.Rd, trunk/gdata/inst/doc/gregmisc.tex,
-	  trunk/gdata/man/ConvertMedUnits.Rd,
-	  trunk/gdata/man/aggregate.table.Rd, trunk/gdata/man/combine.Rd,
-	  trunk/gdata/man/interleave.Rd, trunk/gdata/man/matchcols.Rd,
-	  trunk/gdata/man/nobs.Rd, trunk/gdata/man/read.xls.Rd,
-	  trunk/gdata/man/rename.vars.Rd, trunk/gdata/man/reorder.Rd,
-	  trunk/gdata/man/trim.Rd, trunk/gdata/man/unmatrix.Rd,
-	  trunk/gdata/man/upperTriangle.Rd,
-	  trunk/gmodels/man/fast.prcomp.Rd,
-	  trunk/gmodels/man/fit.contrast.Rd, trunk/gmodels/man/glh.test.Rd,
-	  trunk/gmodels/man/make.contrasts.Rd,
-	  trunk/gplots/inst/doc/BalloonPlot.pdf,
-	  trunk/gplots/man/balloonplot.Rd, trunk/gplots/man/bandplot.Rd,
-	  trunk/gplots/man/boxplot.n.Rd, trunk/gplots/man/colorpanel.Rd,
-	  trunk/gplots/man/hist2d.Rd, trunk/gplots/man/ooplot.Rd,
-	  trunk/gplots/man/overplot.Rd, trunk/gplots/man/plot.lm2.Rd,
-	  trunk/gplots/man/plotCI.Rd, trunk/gplots/man/plotmeans.Rd,
-	  trunk/gplots/man/residplot.Rd, trunk/gplots/man/sinkplot.Rd,
-	  trunk/gplots/man/smartlegend.Rd, trunk/gplots/man/space.Rd,
-	  trunk/gplots/man/textplot.Rd, trunk/gplots/man/wapply.Rd,
-	  trunk/gregmisc/DESCRIPTION,
-	  trunk/gregmisc/gregmisc/DESCRIPTION.standalone,
-	  trunk/gregmisc/inst/doc/gregmisc.tex,
-	  trunk/gtools/man/addLast.Rd, trunk/gtools/man/assert.Rd,
-	  trunk/gtools/man/capture.Rd, trunk/gtools/man/combinations.Rd,
-	  trunk/gtools/man/defmacro.Rd, trunk/gtools/man/dirichlet.Rd,
-	  trunk/gtools/man/foldchange.Rd, trunk/gtools/man/invalid.Rd,
-	  trunk/gtools/man/logit.Rd, trunk/gtools/man/mixedsort.Rd,
-	  trunk/gtools/man/oddeven.Rd, trunk/gtools/man/permute.Rd,
-	  trunk/gtools/man/quantcut.Rd, trunk/gtools/man/running.Rd,
-	  trunk/gtools/man/scat.Rd, trunk/gtools/man/setTCPNoDelay.Rd,
-	  trunk/nws/DESCRIPTION, trunk/qvalue/DESCRIPTION,
-	  trunk/qvalue/man/print.qvalue.Rd, trunk/ssize/DESCRIPTION,
-	  trunk/ssize/man/pow.Rd: Update my email address
+	* DESCRIPTION, man/exit.Rd, man/fork.Rd, man/getpid.Rd,
+	  man/kill.Rd, man/signame.Rd, man/wait.Rd: Update my email address
 
 2005-03-31 18:06  warnes
 
-	* [r584] DESCRIPTION: Update version number
+	* DESCRIPTION: Update version number
 
 2005-03-31 17:44  warnes
 
-	* [r583] man/signame.Rd: Remove extraneous character ('.').
+	* man/signame.Rd: Remove extraneous character ('.').
 
 2004-05-25 19:13  warnes
 
-	* [r341] DESCRIPTION: Update version number for release.
+	* DESCRIPTION: Update version number for release.
 
 2004-05-25 19:12  warnes
 
-	* [r340] R/exit.R, R/fork.R, R/getpid.R, R/kill.R, R/signame.R,
-	  R/wait.R: Add PACKAGE= argument to all .C and .Call invocations.
+	* R/exit.R, R/fork.R, R/getpid.R, R/kill.R, R/signame.R, R/wait.R:
+	  Add PACKAGE= argument to all .C and .Call invocations.
 
 2003-12-20 02:07  warnes
 
-	* [r273] DESCRIPTION: Revised description a little bit.
+	* DESCRIPTION: Revised description a little bit.
 
 2003-12-19 15:22  warnes
 
-	* [r272] man/fork.Rd, src/fork.c: - Work around bug in Rd2dvi with
+	* man/fork.Rd, src/fork.c: - Work around bug in Rd2dvi with
 	  /preformatted
 	  
 	  - Convert C++ style comments (//...) to ordinary C comments
@@ -220,27 +193,27 @@
 
 2003-12-09 21:35  warnes
 
-	* [r259] DESCRIPTION, man/fork.Rd: Change version number to 1.0.0.
+	* DESCRIPTION, man/fork.Rd: Change version number to 1.0.0.
 
 2003-12-09 21:03  warnes
 
-	* [r258] R/wait.R, src/fork.c: - remove non-portable signals
+	* R/wait.R, src/fork.c: - remove non-portable signals
 
 2003-12-09 20:57  warnes
 
-	* [r257] man/exit.Rd, man/fork.Rd, man/getpid.Rd, man/kill.Rd,
+	* man/exit.Rd, man/fork.Rd, man/getpid.Rd, man/kill.Rd,
 	  man/signame.Rd, man/wait.Rd: - Changes to pass R CMD check
 	  - Remove non-portable signal references
 
 2003-07-18 03:37  warnes
 
-	* [r216] R/signame.R, man/exit.Rd, man/fork.Rd, man/getpid.Rd,
+	* R/signame.R, man/exit.Rd, man/fork.Rd, man/getpid.Rd,
 	  man/signame.Rd: - Fix various problems identified by R CMD check.
 
 2003-07-18 02:52  warnes
 
-	* [r215] R/signame.R, man/signame.Rd, src/fork.c: - Added
-	  Rfork_siglist() C function to list all signal information
+	* R/signame.R, man/signame.Rd, src/fork.c: - Added Rfork_siglist()
+	  C function to list all signal information
 	  - Added siglist() R function to call Rfork_siglist()
 	  - Added documentation for signame(), sigval(), and siglist().
 	  - Removed some debugging code from fork.c.
@@ -249,49 +222,48 @@
 
 2003-07-18 02:48  warnes
 
-	* [r214] INDEX: - Removed so that it will be auto-generated at
-	  packaging time.
+	* INDEX: - Removed so that it will be auto-generated at packaging
+	  time.
 
 2003-07-17 19:30  warnes
 
-	* [r213] R/signame.R, src/fork.c: - Added Rfork_signame and
-	  Rfork_sigval C functions to look up signal
+	* R/signame.R, src/fork.c: - Added Rfork_signame and Rfork_sigval C
+	  functions to look up signal
 	  information given a symbolic name or a signal value.
 	  - Added corresponding R signame() and sigval() functions.
 
 2003-07-17 19:28  warnes
 
-	* [r212] man/fork.Rd, man/kill.Rd: - Improved the help text for
-	  fork by making it more explicit what problems occur with code
-	  parsing after a fork.
+	* man/fork.Rd, man/kill.Rd: - Improved the help text for fork by
+	  making it more explicit what problems occur with code parsing
+	  after a fork.
 	  - Added a default signal to killall.
 
 2003-07-17 19:27  warnes
 
-	* [r211] R/kill.R: - Added default signal number for killall.
+	* R/kill.R: - Added default signal number for killall.
 
 2003-07-17 01:50  warnes
 
-	* [r210] R/fork.R, R/kill.R, man/exit.Rd, man/fork.Rd,
-	  man/getpid.Rd, man/kill.Rd, man/wait.Rd: - Fixed email address in
-	  help pages.
+	* R/fork.R, R/kill.R, man/exit.Rd, man/fork.Rd, man/getpid.Rd,
+	  man/kill.Rd, man/wait.Rd: - Fixed email address in help pages.
 
 2003-07-17 01:28  warnes
 
-	* [r209] R/getpid.R: - Added CVS Id header tag
+	* R/getpid.R: - Added CVS Id header tag
 
 2003-07-17 01:28  warnes
 
-	* [r208] DESCRIPTION: - Clarified description text.
+	* DESCRIPTION: - Clarified description text.
 
 2003-07-17 01:27  warnes
 
-	* [r207] man/exit.Rd, man/fork.Rd, man/getpid.Rd, man/kill.Rd,
+	* man/exit.Rd, man/fork.Rd, man/getpid.Rd, man/kill.Rd,
 	  man/wait.Rd: - Fixed typos, added header with CVS Id tag
 
 2003-07-17 01:15  warnes
 
-	* [r206] R/exit.R, R/fork.R, R/getpid.R, R/kill.R, R/wait.R,
+	* R/exit.R, R/fork.R, R/getpid.R, R/kill.R, R/wait.R,
 	  man/getpid.Rd, man/kill.Rd, src/fork.c: - Added help pages for
 	  all functions.
 	  
@@ -302,12 +274,12 @@
 
 2003-07-17 01:02  warnes
 
-	* [r205] man/fork.Rd, man/kill.Rd, man/wait.Rd: - Split fork.R into
+	* man/fork.Rd, man/kill.Rd, man/wait.Rd: - Split fork.R into
 	  fork.R, exit.R, wait.R, getpid.R.
 
 2003-07-16 21:18  warnes
 
-	* [r202] ., DESCRIPTION, INDEX, R, R/fork.R, R/zzz.R, man,
-	  man/exit.Rd, man/fork.Rd, man/kill.Rd, man/wait.Rd, src,
-	  src/fork.c: Initial revision
+	* ., DESCRIPTION, INDEX, R, R/fork.R, R/zzz.R, man, man/exit.Rd,
+	  man/fork.Rd, man/kill.Rd, man/wait.Rd, src, src/fork.c: Initial
+	  revision
 

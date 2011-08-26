@@ -1,4 +1,4 @@
-# $Id: kill.R 340 2004-05-25 19:12:32Z warnes $
+# $Id: kill.R 1495 2011-09-01 23:36:31Z warnes $
 
 kill <- function(pid, signal=15)
   {
@@ -12,9 +12,9 @@ kill <- function(pid, signal=15)
 
 killall <- function(signal=15)
   {
-    if(!exists(".pidlist",where="package:fork"))
+    if(!exists(".pidlist",where=.GlobalEnv))
       warning("No processes to kill, ignored.")
-    for(pid in get(".pidlist",pos="package:fork"))
+    for(pid in get(".pidlist",pos=.GlobalEnv))
       kill(pid, signal)
     invisible()
   }

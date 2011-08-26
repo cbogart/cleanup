@@ -1,4 +1,4 @@
-% $Id: getpid.Rd 1085 2007-03-24 21:30:26Z warnes $
+% $Id: getpid.Rd 1482 2011-08-26 20:48:15Z warnes $
 \name{getpid}
 \alias{getpid}
 \title{Obtain the process id for the current process.}
@@ -15,7 +15,7 @@ getpid()
   Integer process id.
 }
 \references{Unix "getpid" man page}
-\author{ Gregory R. Warnes \email{greg@random-technologies-llc.com}}
+\author{ Gregory R. Warnes \email{greg@warnes.net}}
 \seealso{\code{\link{fork}}, \code{\link{exit}}, \code{\link{wait}},
          \code{\link{kill}}, \code{\link{killall}} }
 \examples{

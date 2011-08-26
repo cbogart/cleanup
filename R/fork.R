@@ -1,4 +1,4 @@
-# $Id: fork.R 340 2004-05-25 19:12:32Z warnes $
+# $Id: fork.R 1495 2011-09-01 23:36:31Z warnes $
 
 fork <- function(slave)
   
@@ -14,8 +14,8 @@ fork <- function(slave)
     if(pid==0)
       {
         # the slave shouldn't get a list of the master's children (?)
-        if(exists(".pidlist",where="package:fork"))
-          remove(".pidlist",pos="package:fork")
+        if(exists(".pidlist",where=.GlobalEnv))
+          remove(".pidlist",pos=.GlobalEnv)
         
         if(!is.null(slave))
           {
@@ -28,10 +28,10 @@ fork <- function(slave)
       {
         # save all the pid's that get created just in case the user forgets
         # to keep track of them!
-        if(!exists(".pidlist",where="package:fork"))
-          assign(".pidlist",pid,pos="package:fork")
+        if(!exists(".pidlist",where=.GlobalEnv))
+          assign(".pidlist",pid,pos=.GlobalEnv)
         else
-          assign(".pidlist",c(.pidlist, pid),pos="package:fork")
+          assign(".pidlist",c(.pidlist, pid),pos=.GlobalEnv)
       }
 
     return(pid)
