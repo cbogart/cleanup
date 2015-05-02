@@ -27,7 +27,7 @@ SEXP sig_environment;
 */
 void callRfunction(SEXP par, SEXP env) {           // essentialy same as the old evaluate
     SEXP fn = Rf_lang1(par);   //fcall
-    Rf_eval(fn, env);         
+    Rf_eval(fn, PRENV(fn)); //env         
 }
 
 void sigterm_handler(int dummy) 
