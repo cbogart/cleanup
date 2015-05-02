@@ -13,7 +13,7 @@ on.sigterm <- function(action)
 
 restore.sigterm <- function()
   {
-    .C("R_restore_sigtrm_handler", PACKAGE="cleanup")
+    .Call("R_restore_sigtrm_handler", PACKAGE="cleanup")
     invisible(NULL)
   }
   
