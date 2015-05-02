@@ -33,6 +33,9 @@ void callRfunction(SEXP par, SEXP env) {           // essentialy same as the old
 void sigterm_handler(int dummy) 
 {
   callRfunction(sig_rfunction, sig_environment);
+  if (osa.sa_handler != NULL) {
+    (*osa.sa_handler)(dummy);
+  }
   int st;
   // wait3 returns 0 when no signal is present to retrieve
   while (wait3(&st, WNOHANG, NULL) > 0);
