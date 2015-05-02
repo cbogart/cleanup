@@ -39,13 +39,13 @@ void sigterm_handler(int dummy)
 }
 
 
-SEXP R_install_sigterm_handler(SEXP rfunction, SEXP environment)
+void R_install_sigterm_handler(SEXP rfunction, SEXP environment)
 {
   int ret;
 
   if(installed==0)
     {
-      Rprintf ("Installing SIGTERM signal handler...");
+      //Rprintf ("Installing SIGTERM signal handler...");
       sig_rfunction = rfunction;
       sig_environment = environment;
       sa.sa_handler = sigterm_handler;
