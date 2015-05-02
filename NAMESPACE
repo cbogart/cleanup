@@ -1,14 +1,6 @@
+useDynLib(cleanup)
 export(
-	exit,
-	fork,
-	getpid,
-	handleSIGCLD,
-	kill,
-	killall,
-	restoreSIGCLD,
-	signal,
-	signame,
-	sigval,
-	siglist,
-	wait
+    #R_install_sigterm_handler,
+    on.sigterm,
+	restore.sigterm
 )

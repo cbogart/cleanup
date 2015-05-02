@@ -1,4 +1,5 @@
 .onLoad <- function(lib, pkg)
   {
-    library.dynam("fork",pkg,lib)
+    print(lib); print(pkg);
+    #library.dynam("cleanup",pkg,lib)
   }
