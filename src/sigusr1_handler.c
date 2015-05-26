@@ -28,10 +28,8 @@ SEXP sig_environment;
 void callRfunction(SEXP par, SEXP env) {           // essentialy same as the old evaluate
     SEXP fn = Rf_lang1(par);   //fcall
     if (isEnvironment(env)) {
-        cat("isEnvironment");
         Rf_eval(fn, env); //env         
     } else {
-        cat("R_GlobalEnv");
         Rf_eval(fn, R_GlobalEnv);
     }
 }

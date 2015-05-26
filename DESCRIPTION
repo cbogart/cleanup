@@ -1,7 +1,7 @@
 Package: cleanup
 Title: R function for doing cleanup when SIGUSR1 received
 Version: 0.1.1.9000
-Date: 2015-05-01
+Date: 2015-05-26
 Author: Christopher Bogart <cbogartdenver@gmail.com>
 Description: Just a single function that does cleanup when SIGUSR1 is received
 Maintainer: Christopher A. Bogart <cbogartdenver@gmail.com>

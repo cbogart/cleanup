@@ -1,6 +1,5 @@
 useDynLib(cleanup)
 export(
-    #R_install_sigusr1_handler,
     on.sigusr1,
 	restore.sigusr1
 )
