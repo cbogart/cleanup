@@ -28,13 +28,15 @@ SEXP sig_environment;
 void callRfunction(SEXP par, SEXP env) {           // essentialy same as the old evaluate
     SEXP fn = Rf_lang1(par);   //fcall
     if (isEnvironment(env)) {
+        cat("isEnvironment");
         Rf_eval(fn, env); //env         
     } else {
+        cat("R_GlobalEnv");
         Rf_eval(fn, R_GlobalEnv);
     }
 }
 
-void sigterm_handler(int dummy) 
+void sigusr1_handler(int dummy) 
 {
   callRfunction(sig_rfunction, sig_environment);
   if (osa.sa_handler != NULL) {
@@ -46,19 +48,19 @@ void sigterm_handler(int dummy)
 }
 
 
-void R_install_sigterm_handler(SEXP rfunction, SEXP environment)
+void R_install_sigusr1_handler(SEXP rfunction, SEXP environment)
 {
   int ret;
 
   if(installed==0)
     {
-      //Rprintf ("Installing SIGTERM signal handler...");
+      //Rprintf ("Installing SIGUSR1 signal handler...");
       sig_rfunction = rfunction;
       sig_environment = environment;
-      sa.sa_handler = sigterm_handler;
+      sa.sa_handler = sigusr1_handler;
       //sigfillset (&sa.sa_mask);
       //sa.sa_flags = SA_RESTART;
-      ret = sigaction (SIGTERM, &sa, &osa);
+      ret = sigaction (SIGUSR1, &sa, &osa);
       if (ret < 0)
 	    {
 	      error("Cannot set signal handler");
@@ -68,19 +70,19 @@ void R_install_sigterm_handler(SEXP rfunction, SEXP environment)
         }
   else
         {
-          warning("SIGTERM signal handler already installed");
+          warning("SIGUSR1 signal handler already installed");
         }
 
 }
 
-void R_restore_sigterm_handler()
+void R_restore_sigusr1_handler()
 {
   int ret;
 
   if(installed==-1)
     {
-      Rprintf ("Restoring original SIGTERM signal handler...");
-      ret = sigaction (SIGTERM, &osa, &sa);
+      Rprintf ("Restoring original SIGUSR1 signal handler...");
+      ret = sigaction (SIGUSR1, &osa, &sa);
       if (ret < 0)
 	    {
 	      error("Cannot reset signal handler");
@@ -90,7 +92,7 @@ void R_restore_sigterm_handler()
     }
   else
     {
-      warning("SIGTERM signal handler not installed: cannot reset.");
+      warning("SIGUSR1 signal handler not installed: cannot reset.");
     }
 
 }

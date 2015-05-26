@@ -1,6 +1,6 @@
 useDynLib(cleanup)
 export(
-    #R_install_sigterm_handler,
-    on.sigterm,
-	restore.sigterm
+    #R_install_sigusr1_handler,
+    on.sigusr1,
+	restore.sigusr1
 )
